@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width">
+<title>Insert title here</title>
+<style>
+header {
+	text-align: left;
+	font-size: 20px;
+	font-colour: black;
+}
+
+section {
+	background: lightblue;
+	float: left;
+	font-size: 15px;
+	font-colour: black;
+	height: 800px;
+	width: 70%;
+}
+
+article {
+	background-color: lightblue;
+	text-align: right;
+	float: right;
+	width: 70%;
+	padding: 20px;
+}
+
+nav {
+	float: left;
+	width: 12%;
+	height: 800px; /* only for demonstration, should be removed */
+	padding: 20px;
+	background: skyblue;
+}
+
+body {
+	background: url("birthday1.jpg");
+	font-size: 150%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color:rgba(0,0,250,0.8);
+	background-blend-mode:lighten;
+}
+</style>
+</head>
+<body>
+	<header id="name"
+		style="margin-left: 15px; height: 50px; font-size: 150%;"></header>
+	<nav>
+		<input type="button"
+			style="margin-top: 5px; width: 100%; background: skyblue; height: 35px; font-size: 70%;border-top-right-radius: 15px;border-bottom-right-radius: 15px;outline:none;"
+			value="HOME" onclick="reloadPage()"> 
+		<input type="button"
+			style="margin-top: 5px; width: 100%; background: lightblue; height: 35px; font-size: 70%;border-top-right-radius: 15px;border-bottom-right-radius: 15px;outline:none;"
+			value="MESSAGES" onclick="thirdPage()"> 
+		<input type="button"
+			style="margin-top: 5px; width: 100%; background: lightblue; height: 35px; font-size: 70%;border-top-right-radius: 15px;border-bottom-right-radius: 15px;outline:none;"
+			value="UPDATE PROFILE" onclick="fifthPage()">
+		<input
+			type="button"
+			style="margin-top: 5px; width: 100%; background: lightblue; height: 35px; font-size: 70%;border-top-right-radius: 15px;border-bottom-right-radius: 15px;outline:none;"
+			value="LOG OUT" onclick="firstPage()">
+	</nav>
+    <p style="margin-left: 680px;height: 35px; font-size: 120%;">HOME PAGE
+	</p>
+	<p>
+		<input type="button" value="click here to see upcoming birthdays in this year"
+			style="margin-left: 350px; HEIGHT: 35PX; background: lightblue; font-size: 80%;border-top-right-radius: 10px;border-bottom-right-radius: 10px;
+			border-top-left-radius: 10px;border-bottom-left-radius: 10px;outline:none;"
+			onclick="generate_table()">
+	</p>
+</body>
+<script
+	src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="fourthPageJS.js"></script>
+</html>

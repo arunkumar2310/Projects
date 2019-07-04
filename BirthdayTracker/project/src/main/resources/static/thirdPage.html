@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width">
+<title>Insert title here</title>
+<style>
+header {
+	text-align: left;
+	font-size: 20px;
+	font-colour: black;
+}
+
+nav {
+ 	float: left;
+	width: 12%;
+	background: skyblue;
+	height: 800px;
+	padding: 20px;
+}
+
+body {
+	background: url("birthday1.jpg");
+	font-size: 150%;
+	background-repeat: no-repeat;
+	background-size: cover;
+    background-color:rgba(0,0,250,0.8);
+	background-blend-mode:lighten;
+}
+</style>
+</head>
+<body>
+	<header id="name"
+		style="margin-left: 15px; height: 50px; font-size: 150%;"></header>
+	<nav>
+		<input type="button"
+			style="outline:none;margin-top: 5px; width: 100%; background: lightblue; height: 35px; font-size: 70%;border-top-right-radius: 15px;border-bottom-right-radius: 15px;"
+			value="HOME" onclick="nextPage()"> 
+		<input type="button"
+			style="outline:none;margin-top: 5px; width: 100%; background: skyblue; height: 35px; font-size: 70%;border-top-right-radius: 15px;border-bottom-right-radius: 15px;"
+			value="MESSAGES" onclick="thirdPage()">
+		<input type="button"
+			style="outline:none;margin-top: 5px; width: 100%; background: lightblue; height: 35px; font-size: 70%;border-top-right-radius: 15px;border-bottom-right-radius: 15px;"
+			value="UPDATE PROFILE" onclick="fifthPage()"> 
+		<input
+			type="button"
+			style="outline:none;margin-top: 5px; width: 100%; background: lightblue; height: 35px; font-size: 70%;border-top-right-radius: 15px;border-bottom-right-radius: 15px;"
+			value="LOG OUT" onclick="firstPage()">
+	</nav>
+	<p style="margin-left: 590px;height: 35px; font-size: 120%;">You can see your messages here
+	</p>
+	<!-- <p id="wish">Hey!!! It's your birthday...Many more happy returns of the day...We wish your endeavors to be a great success!!!</p>
+	 -->
+	 <p>
+		<input type="button"
+			style="outline:none;margin-left: 450px; width: 20%; background: lightblue; height: 35px; font-size: 80%;border-top-right-radius: 10px;border-bottom-right-radius: 10px;
+			border-top-left-radius: 10px;border-bottom-left-radius: 10px;outline:none;"
+			value="Click here to see wishes !!!" onclick="showWishes()">
+	</p>
+</body>
+<script
+	src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="thirdPageJS.js"></script>
+</html>

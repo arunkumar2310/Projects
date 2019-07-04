@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+body {
+    text-align:center;
+	background: url("cloud.jpg");
+	font-size: 150%;
+	background-repeat: no-repeat;
+	background-size: 100% 130%;
+	background-attachment:fixed;
+}
+</style>
+</head>
+<body>
+	<h1 style="text-align: center; font-family: Comic Sans MS;">
+		<img src="Birthday_Cake.jpg" align="left" height="60" width="130">BIRTHDAY
+		TRACKER<img src="Birthday_Cake.jpg" align="right" height="60"
+			width="130">
+	</h1>
+	<p style="margin-top:100px;font-size: 150%;">
+		<i>"Roses are red,violet is blue...<br>Tell us your
+			birthday,so that we can wish you..."
+		</i>
+	</p>
+	<form  method="get">
+		<table style="border:1px solid black;background-color:deepskyblue; margin-top: 5px; font-size: 80%;border-top-right-radius: 10px;border-bottom-right-radius: 10px;
+			border-top-left-radius: 10px;border-bottom-left-radius: 10px;"align="center">
+		<tr><td style="background-color:blue;color:yellow; margin-top: 5px; font-size: 100%;border-top-right-radius: 2px;border-bottom-right-radius: 10px;
+			border-top-left-radius: 10px;border-bottom-left-radius: 2px;">Own an account?</td>
+		</tr>
+			<tr>
+				<td>Name</td>
+				<td>:</td>
+				<td><input style="width:200px;" type="text" id="name" onfocusout="nameFunction()"required>
+				<div id="nameError"><input style="width:200px;background:deepskyblue;border:1px solid black;" type="text" value="**Please enter your name**"></div></td>
+			</tr>
+			<tr>
+				<td>Password</td>
+				<td>:</td>
+				<td><input style="width:200px;" type="password" id="password" onfocusout="password1Function()" required>
+				<div id="password1Error"><input style="background-color:deepskyblue;width:200px;border:1px solid black;" type="text" value="**Please enter your password**"></div>
+				<div id="validationError"><input style="background-color:deepskyblue;width:200px;border:1px solid black;" type="text" value="**Please check your password**"></div></td>
+			</tr>
+			<tr>
+			<td>  </td><td>  </td>
+			<td><input type="button" value="SIGN IN" id="button"
+			style=" margin-top: 5px; font-size: 80%;border-top-right-radius: 5px;border-bottom-right-radius: 5px;
+			border-top-left-radius: 5px;border-bottom-left-radius: 5px;outline:none;background:blue;color:yellow;"
+			onclick="buttonClicked()"></td>
+			</tr>
+		</table>
+		
+	</form>
+
+	<p style="font-color: red;">
+		Not registered yet??? <a href="http://localhost:8080/login2">SIGN
+			UP HERE</a>
+	</p>
+</body>
+<script type="text/javascript" src="firstPageJS.js"></script>
+<script
+	src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+</html>

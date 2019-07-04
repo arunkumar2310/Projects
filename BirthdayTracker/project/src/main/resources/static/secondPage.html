@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+body {
+	background-image: url("birthday1.jpg");
+	font-size: 190%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color:rgba(0,0,250,0.8);
+	background-blend-mode:lighten;
+}
+
+select {
+	width: 235px;
+}
+</style>
+</head>
+<body>
+	<h3 style="margin-left: 10px;">Create Profile</h3>
+	<form method="get" action="submit.php" name="myForm">
+		<table style="margin-left: 50px;">
+			<tr>
+				<td>Full Name</td>
+				<td>:</td>
+				<td><input size="29" type="text" id="name"
+					placeholder="enter the name" onfocusout="namefunction()" required>
+					<div id="nameError"><input style="width:200px;background:deepskyblue;border:1px solid black;" type="text" value="**Please enter your name**"></div></td>
+			</tr>
+			<tr>
+			<tr>
+				<td>D.O.B</td>
+				<td>:</td>
+				<td><input size="29" type="date" id="dateOfBirth" 
+					placeholder="enter the d.o.b" required></td>
+			</tr>
+			<tr>
+				<td>Mobile</td>
+				<td>:</td>
+				<td><input size="29" type="tel" pattern="[0-9]{10}" title="Please enter 10 digit mobile number" id="mobile"
+					placeholder="Enter mobile number" onfocusout="mobilefunction()">
+					<div id="mobileError"><input style="width:230px;background:deepskyblue;border:1px solid black;" type="text" value="**Please enter 10 digit mobile number**"></div></td>
+			</tr>
+			<tr>
+				<td>Favourite cakes</td>
+				<td>:</td>
+				<td><select multiple name="cakes" size="3">
+						<option value="chocolateCake">Chocolate cake</option>
+						<option value="blackForest">Blackforest</option>
+						<option value="whiteForest">Whiteforest</option>
+				</select></td>
+			</tr>
+			<tr>
+				<td>Favourite colour</td>
+				<td>:</td>
+				<td><select id="colours">
+						<option value="violet">Violet</option>
+						<option value="indigo">Indigo</option>
+						<option value="blue">Blue</option>
+						<option value="green">Green</option>
+						<option value="yellow">Yellow</option>
+						<option value="orange">Orange</option>
+						<option value="red">Red</option>
+				</select>
+			</tr>
+			<tr>
+				<td>About yourself</td>
+				<td>:</td>
+				<td><textarea id="message" rows="5" cols="30"
+						placeholder="Share something about yourself..."></textarea></td>
+			</tr>
+			<tr>
+				<td>Password</td>
+				<td>:</td>
+				<td><input size="29" type="password" id="password" pattern=".{4,}" title="Password must have atleat 4 characters"
+					placeholder="enter the password" onfocusout="password1Function()">
+					<div id="password1Error"><input style="width:200px;background:deepskyblue;border:1px solid black;" type="text" value="**Please enter the password**"></div></td>
+			</tr>
+			<tr>
+				<td>Confirm Password</td>
+				<td>:</td>
+				<td><input size="29" type="password" id="confirmPassword"
+					placeholder="Re-enter the password" onfocusout="password2Function()">
+					<div id="password2Error"><input style="width:350px;background:deepskyblue;border:1px solid black;" type="text" value="**Please enter password and confirm password as same**"></div></td>
+			</tr>
+		</table>
+
+		<input type="button" value="SAVE" id="button1"
+			style="margin-left: 200px; margin-top: 10px; font-size: 80%;border-top-right-radius: 10px;border-bottom-right-radius: 10px;
+			border-top-left-radius: 10px;border-bottom-left-radius: 10px;outline:none;"
+			onclick="buttonOneClicked()">
+		<input type="reset"
+			value="CANCEL" id="button2" style="font-size: 80%;border-top-right-radius: 10px;border-bottom-right-radius: 10px;
+			border-top-left-radius: 10px;border-bottom-left-radius: 10px;outline:none;"
+			onclick="buttonTwoClicked()">
+	</form>
+</body>
+
+<script type="text/javascript" src="secondPageJS.js"></script>
+<script
+	src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+</html>
